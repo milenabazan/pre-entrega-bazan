@@ -3,34 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo para patín</title>
+    <title>Productos | Todo para patín</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explora nuestra amplia gama de productos de patinaje, incluyendo bolsos, ruedas y cubrebotas. Calidad y estilo para tus entrenamientos y competencias.">
+    <meta name="keywords" content="productos, patinaje, ruedas, bolsos, cubrebotas, accesorios de patinaje">
+    <meta name="author" content="Tu Nombre">
+    <meta property="og:title" content="Productos | Todo para Patín">
+    <meta property="og:description" content="Descubre nuestros productos de patinaje: bolsos, ruedas y más. Todo lo que necesitas para destacar en la pista.">
+    <meta property="og:image" content="ruta/a/tu/imagen_productos.jpg">
+    <meta property="og:url" content="https://tusitioweb.com/productos.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Productos | Todo para Patín">
+    <meta name="twitter:description" content="Compra los mejores accesorios de patinaje con calidad garantizada.">
+    <meta name="twitter:image" content="ruta/a/tu/imagen_productos.jpg">
+    <meta name="twitter:site" content="@tucuenta">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
     <!-- Custom CSS -->
     <style type="text/css">
         body {
-    padding-top: 56px;
-    background-color: #cdd5c6;
-}
+            padding-top: 56px;
+            background-color: #cdd5c6;
+        }
 
-.card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px; /* Vertically center the text there */
-    
-}
+        .footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
 
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Productos</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,58 +78,67 @@
                     <a class="nav-link" href="./contactos.html">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./usados.html"> Usados</a>
+                    <a class="nav-link" href="./usados.html">Usados</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <!-- Main Content -->
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up">
                 <div class="card mb-4">
-                    <img src="../barbiebolso.png" class="card-img-top" alt="Producto 1">
+                    <img src="../barbiebolso.png" class="card-img-top" alt="Bolso de Barbie">
                     <div class="card-body">
                         <h5 class="card-title">Bolso de Barbie</h5>
                         <p class="card-text">Diferentes modelos en stock.</p>
                         <p class="card-text"><strong>$15.100</strong></p>
-                        
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="card mb-4">
-                    <img src="../ruedas.png" class="card-img-top" alt="Producto 2">
+                    <img src="../ruedas.png" class="card-img-top" alt="Ruedas">
                     <div class="card-body">
                         <h5 class="card-title">Ruedas</h5>
                         <p class="card-text">Ruedas anker eros glitter. Juego de 8 ruedas.</p>
                         <p class="card-text"><strong>$96.000</strong></p>
-                    
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="card mb-4">
-                    <img src="../bolso.png" class="car-img-top" alt="Producto 3">
+                    <img src="../bolso.png" class="card-img-top" alt="Bolso + Cubrebotas">
                     <div class="card-body">
                         <h5 class="card-title">Bolso + Cubrebotas</h5>
-                        <p class="card-text">Bolso tik tok + cubrebota lycra.</p>
+                        <p class="card-text">Bolso Tik Tok + Cubrebotas de lycra.</p>
                         <p class="card-text"><strong>$21.600</strong></p>
-                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
     <footer class="footer bg-light py-3">
         <div class="container">
-            <span class="text-muted">© 2024 Mi emprendimiento. Todos los derechos reservados.</span>
+            <span class="text-muted">©️ 2024 Mi emprendimiento. Todos los derechos reservados.</span>
         </div>
     </footer>
 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, // Duración de las animaciones en milisegundos
+            once: true // Las animaciones se ejecutarán solo una vez
+        });
+    </script>
 </body>
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>
